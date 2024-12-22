@@ -15,8 +15,8 @@ def evolutionProcess(givenSecret):
     thirtytwo = round(secret >> 5);
     secret = mix(thirtytwo, secret);
     secret = prune(secret);
-    deumilkarnathuit = secret << 11;
-    secret = mix(deumilkarnathuit, secret);
+    deuxmillequarantehuit = secret << 11;
+    secret = mix(deuxmillequarantehuit, secret);
     secret = prune(secret);
     return secret;
 
@@ -28,8 +28,6 @@ def determineFinalSecret(givenSecret, iterations):
 
 #print(mix(15,42))
 #print(prune(100000000))
-#print(1<<6)
-#print(34>>5)
 #print("Final: " + str(determineFinalSecret(1,2000)));
 
 with open("22/input22.txt") as file:
